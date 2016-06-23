@@ -1,0 +1,299 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 46;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		C393CD6F1D1A66C500D484FA /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = C393CD6E1D1A66C500D484FA /* AppDelegate.swift */; };
+		C393CD711D1A66C500D484FA /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = C393CD701D1A66C500D484FA /* ViewController.swift */; };
+		C393CD741D1A66C500D484FA /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = C393CD721D1A66C500D484FA /* Main.storyboard */; };
+		C393CD761D1A66C500D484FA /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = C393CD751D1A66C500D484FA /* Assets.xcassets */; };
+		C393CD791D1A66C500D484FA /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = C393CD771D1A66C500D484FA /* LaunchScreen.storyboard */; };
+		C393CD811D1A782300D484FA /* ResultViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = C393CD801D1A782300D484FA /* ResultViewController.swift */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXFileReference section */
+		C393CD6B1D1A66C500D484FA /* SliderGame.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = SliderGame.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		C393CD6E1D1A66C500D484FA /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
+		C393CD701D1A66C500D484FA /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
+		C393CD731D1A66C500D484FA /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
+		C393CD751D1A66C500D484FA /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		C393CD781D1A66C500D484FA /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
+		C393CD7A1D1A66C500D484FA /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		C393CD801D1A782300D484FA /* ResultViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ResultViewController.swift; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		C393CD681D1A66C500D484FA /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		C393CD621D1A66C500D484FA = {
+			isa = PBXGroup;
+			children = (
+				C393CD6D1D1A66C500D484FA /* SliderGame */,
+				C393CD6C1D1A66C500D484FA /* Products */,
+			);
+			sourceTree = "<group>";
+		};
+		C393CD6C1D1A66C500D484FA /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				C393CD6B1D1A66C500D484FA /* SliderGame.app */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		C393CD6D1D1A66C500D484FA /* SliderGame */ = {
+			isa = PBXGroup;
+			children = (
+				C393CD6E1D1A66C500D484FA /* AppDelegate.swift */,
+				C393CD701D1A66C500D484FA /* ViewController.swift */,
+				C393CD801D1A782300D484FA /* ResultViewController.swift */,
+				C393CD721D1A66C500D484FA /* Main.storyboard */,
+				C393CD751D1A66C500D484FA /* Assets.xcassets */,
+				C393CD771D1A66C500D484FA /* LaunchScreen.storyboard */,
+				C393CD7A1D1A66C500D484FA /* Info.plist */,
+			);
+			path = SliderGame;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		C393CD6A1D1A66C500D484FA /* SliderGame */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = C393CD7D1D1A66C500D484FA /* Build configuration list for PBXNativeTarget "SliderGame" */;
+			buildPhases = (
+				C393CD671D1A66C500D484FA /* Sources */,
+				C393CD681D1A66C500D484FA /* Frameworks */,
+				C393CD691D1A66C500D484FA /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = SliderGame;
+			productName = SliderGame;
+			productReference = C393CD6B1D1A66C500D484FA /* SliderGame.app */;
+			productType = "com.apple.product-type.application";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		C393CD631D1A66C500D484FA /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastSwiftUpdateCheck = 0730;
+				LastUpgradeCheck = 0730;
+				ORGANIZATIONNAME = "Shakti Pratap Singh";
+				TargetAttributes = {
+					C393CD6A1D1A66C500D484FA = {
+						CreatedOnToolsVersion = 7.3.1;
+					};
+				};
+			};
+			buildConfigurationList = C393CD661D1A66C500D484FA /* Build configuration list for PBXProject "SliderGame" */;
+			compatibilityVersion = "Xcode 3.2";
+			developmentRegion = English;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = C393CD621D1A66C500D484FA;
+			productRefGroup = C393CD6C1D1A66C500D484FA /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				C393CD6A1D1A66C500D484FA /* SliderGame */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		C393CD691D1A66C500D484FA /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				C393CD791D1A66C500D484FA /* LaunchScreen.storyboard in Resources */,
+				C393CD761D1A66C500D484FA /* Assets.xcassets in Resources */,
+				C393CD741D1A66C500D484FA /* Main.storyboard in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		C393CD671D1A66C500D484FA /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				C393CD711D1A66C500D484FA /* ViewController.swift in Sources */,
+				C393CD6F1D1A66C500D484FA /* AppDelegate.swift in Sources */,
+				C393CD811D1A782300D484FA /* ResultViewController.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXVariantGroup section */
+		C393CD721D1A66C500D484FA /* Main.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				C393CD731D1A66C500D484FA /* Base */,
+			);
+			name = Main.storyboard;
+			sourceTree = "<group>";
+		};
+		C393CD771D1A66C500D484FA /* LaunchScreen.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				C393CD781D1A66C500D484FA /* Base */,
+			);
+			name = LaunchScreen.storyboard;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		C393CD7B1D1A66C500D484FA /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 9.3;
+				MTL_ENABLE_DEBUG_INFO = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Debug;
+		};
+		C393CD7C1D1A66C500D484FA /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 9.3;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				SDKROOT = iphoneos;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		C393CD7E1D1A66C500D484FA /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				INFOPLIST_FILE = SliderGame/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = in.codekamp.SliderGame;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+			};
+			name = Debug;
+		};
+		C393CD7F1D1A66C500D484FA /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				INFOPLIST_FILE = SliderGame/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = in.codekamp.SliderGame;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		C393CD661D1A66C500D484FA /* Build configuration list for PBXProject "SliderGame" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				C393CD7B1D1A66C500D484FA /* Debug */,
+				C393CD7C1D1A66C500D484FA /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		C393CD7D1D1A66C500D484FA /* Build configuration list for PBXNativeTarget "SliderGame" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				C393CD7E1D1A66C500D484FA /* Debug */,
+				C393CD7F1D1A66C500D484FA /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = C393CD631D1A66C500D484FA /* Project object */;
+}
