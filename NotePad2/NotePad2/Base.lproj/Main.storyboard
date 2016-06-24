@@ -33,7 +33,7 @@
                                                     <rect key="frame" x="15" y="12" width="32" height="20"/>
                                                     <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                                     <fontDescription key="fontDescription" type="system" pointSize="16"/>
-                                                    <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
+                                                    <color key="textColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
                                                     <nil key="highlightedColor"/>
                                                 </label>
                                                 <label opaque="NO" multipleTouchEnabled="YES" contentMode="left" text="Detail" textAlignment="right" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" id="S9r-Zv-Gkr">
@@ -45,9 +45,6 @@
                                                 </label>
                                             </subviews>
                                         </tableViewCellContentView>
-                                        <connections>
-                                            <segue destination="9Nd-yR-eJe" kind="show" identifier="list_to_detail" id="fRs-yd-tW9"/>
-                                        </connections>
                                     </tableViewCell>
                                 </prototypes>
                             </tableView>
@@ -60,17 +57,19 @@
                             <constraint firstItem="Zhk-Qp-I8h" firstAttribute="leading" secondItem="8bC-Xf-vdC" secondAttribute="leadingMargin" id="iu6-g4-aXO"/>
                         </constraints>
                     </view>
+                    <navigationItem key="navigationItem" id="qss-df-pF6"/>
                     <connections>
                         <outlet property="viewTableVar" destination="Zhk-Qp-I8h" id="RhG-dK-T5a"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
             </objects>
+            <point key="canvasLocation" x="1079" y="400"/>
         </scene>
-        <!--details_view-->
+        <!--notes_details-->
         <scene sceneID="YLZ-44-fot">
             <objects>
-                <viewController storyboardIdentifier="notes_details" title="details_view" id="9Nd-yR-eJe" customClass="NoteViewController" customModule="NotePad2" customModuleProvider="target" sceneMemberID="viewController">
+                <viewController storyboardIdentifier="notes_details" title="notes_details" id="9Nd-yR-eJe" customClass="NoteViewController" customModule="NotePad2" customModuleProvider="target" sceneMemberID="viewController">
                     <layoutGuides>
                         <viewControllerLayoutGuide type="top" id="0cK-9l-Upf"/>
                         <viewControllerLayoutGuide type="bottom" id="Wpm-eJ-uam"/>
@@ -123,7 +122,7 @@
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="Kdi-p1-Vjl" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="971" y="400"/>
+            <point key="canvasLocation" x="1783" y="400"/>
         </scene>
     </scenes>
 </document>

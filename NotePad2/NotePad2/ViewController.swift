@@ -14,7 +14,7 @@ import UIKit
 class ViewController: UIViewController,UITableViewDataSource,UITableViewDelegate {
 
     @IBOutlet weak var viewTableVar: UITableView! //this will be nil only before the call of viewdidload(beacause of !)
-    var noteToBeDisplayed:Note?
+   // var noteToBeDisplayed:Note?
     override func viewDidLoad() {
         super.viewDidLoad()
         viewTableVar.dataSource=self
@@ -24,7 +24,15 @@ class ViewController: UIViewController,UITableViewDataSource,UITableViewDelegate
     func tableView(tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
             return Note.allNotes().count
     }
+    func tableView(tableView: UITableView, canEditRowAtIndexPath indexPath: NSIndexPath) -> Bool {
+        return true
+    }
     
+    func tableView(tableView: UITableView, editActionsForRowAtIndexPath indexPath: NSIndexPath) -> [UITableViewRowAction]? {
+        let delete = UITableViewRowAction(style: .Default, title: "Delete"){(action,indexPath) in //will delete from model
+        }
+        return [delete]
+    }
     func tableView(tableView: UITableView, cellForRowAtIndexPath indexPath: NSIndexPath) -> UITableViewCell {
         let row = indexPath.row
         var cell:UITableViewCell
@@ -37,27 +45,29 @@ class ViewController: UIViewController,UITableViewDataSource,UITableViewDelegate
 
     func tableView(tableView: UITableView, didSelectRowAtIndexPath indexPath: NSIndexPath) {
         
-        self.viewTableVar.deselectRowAtIndexPath(indexPath, animated: true)
+        
+        tableView.deselectRowAtIndexPath(indexPath, animated: true)
         let row = indexPath.row
         let destinationVC = storyboard?.instantiateViewControllerWithIdentifier("notes_details") as! NoteViewController
-        destinationVC.titleOfNote.text = Note.allNotes()[row].title
-        destinationVC.detailsOfNote.text = Note.allNotes()[row].details
-        showViewController(destinationVC, sender: <#T##AnyObject?#>)
+       // print(Note.allNotes()[row].title)
+        destinationVC.initialize(Note.allNotes()[row].title,details: Note.allNotes()[row].details)
+//        destinationVC.titlePassed =
+//        destinationVC.detailsPassed =
+        showViewController(destinationVC, sender: nil)
                 
 
 }
-    override func prepareForSegue(segue: UIStoryboardSegue, sender: AnyObject?) {
-        
-        if let destinationVC = segue.destinationViewController as? NoteViewController{
-            
-            destinationVC.detailsOfNote.text=noteToBeDisplayed!.details // this an error because although the object of destination of view cotroller is loaded but still its view is not still loaded
-            destinationVC.titleOfNote.text=noteToBeDisplayed!.title
-            destinationVC.noteClicked=noteToBeDisplayed
-            
-        }
-        
+//    override func prepareForSegue(segue: UIStoryboardSegue, sender: AnyObject?) {
+//        
+//        if let destinationVC = segue.destinationViewController as? NoteViewController{
+//            
+//            destinationVC.detailsOfNote.text=noteToBeDisplayed!.details // this an error because although the object of destination of view cotroller is loaded but still its view is not still loaded
+//            destinationVC.titleOfNote.text=noteToBeDisplayed!.title
+//            destinationVC.noteClicked=noteToBeDisplayed
+//            
+//        }
+//        
     
   }
 
 
-}

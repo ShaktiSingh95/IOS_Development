@@ -14,12 +14,21 @@ class NoteViewController: UIViewController {
     
     @IBOutlet weak var detailsOfNote: UITextField!
     
-    var editedTitle : String?
-    var editedDetails : String?
-    var noteClicked : Note?
+   var titlePassed : String!
+    var detailsPassed : String!
+    func initialize(title :String, details:String){
+
+        titlePassed=title
+        detailsPassed=details
+        
+    }
+//    var noteClicked : Note?
     override func viewDidLoad() {
         super.viewDidLoad()
-    
+        print(titlePassed)
+        self.titleOfNote.text=titlePassed
+        self.detailsOfNote.text=detailsPassed
+//
 
         // Do any additional setup after loading the view.
     }
