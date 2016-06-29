@@ -1,0 +1,389 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 46;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		0C69B0500D827217270026C3 /* Pods_MailChimp.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 2791B7E342F2CAAC518E9BB3 /* Pods_MailChimp.framework */; };
+		C394ED811D22E582008FE68B /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = C394ED801D22E582008FE68B /* AppDelegate.swift */; };
+		C394ED831D22E582008FE68B /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = C394ED821D22E582008FE68B /* ViewController.swift */; };
+		C394ED861D22E582008FE68B /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = C394ED841D22E582008FE68B /* Main.storyboard */; };
+		C394ED881D22E582008FE68B /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = C394ED871D22E582008FE68B /* Assets.xcassets */; };
+		C394ED8B1D22E582008FE68B /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = C394ED891D22E582008FE68B /* LaunchScreen.storyboard */; };
+		C394ED931D22EB74008FE68B /* MailChimpModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = C394ED921D22EB74008FE68B /* MailChimpModel.swift */; };
+		C394ED951D22EFDB008FE68B /* List.swift in Sources */ = {isa = PBXBuildFile; fileRef = C394ED941D22EFDB008FE68B /* List.swift */; };
+		C394ED971D22F7EA008FE68B /* ContactsViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = C394ED961D22F7EA008FE68B /* ContactsViewController.swift */; };
+		C3FA64721D23A48D0067DD9F /* ContactList.swift in Sources */ = {isa = PBXBuildFile; fileRef = C3FA64711D23A48D0067DD9F /* ContactList.swift */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXFileReference section */
+		2791B7E342F2CAAC518E9BB3 /* Pods_MailChimp.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_MailChimp.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		C394ED7D1D22E582008FE68B /* MailChimp.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = MailChimp.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		C394ED801D22E582008FE68B /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
+		C394ED821D22E582008FE68B /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
+		C394ED851D22E582008FE68B /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
+		C394ED871D22E582008FE68B /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		C394ED8A1D22E582008FE68B /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
+		C394ED8C1D22E582008FE68B /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		C394ED921D22EB74008FE68B /* MailChimpModel.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MailChimpModel.swift; sourceTree = "<group>"; };
+		C394ED941D22EFDB008FE68B /* List.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = List.swift; sourceTree = "<group>"; };
+		C394ED961D22F7EA008FE68B /* ContactsViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ContactsViewController.swift; sourceTree = "<group>"; };
+		C3FA64711D23A48D0067DD9F /* ContactList.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ContactList.swift; sourceTree = "<group>"; };
+		E62DE318CD20599B329FF04F /* Pods-MailChimp.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-MailChimp.debug.xcconfig"; path = "Pods/Target Support Files/Pods-MailChimp/Pods-MailChimp.debug.xcconfig"; sourceTree = "<group>"; };
+		F66B1D164182FF23DA27EAB9 /* Pods-MailChimp.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-MailChimp.release.xcconfig"; path = "Pods/Target Support Files/Pods-MailChimp/Pods-MailChimp.release.xcconfig"; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		C394ED7A1D22E582008FE68B /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				0C69B0500D827217270026C3 /* Pods_MailChimp.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		2370E2A1434274FD7C81FE94 /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				E62DE318CD20599B329FF04F /* Pods-MailChimp.debug.xcconfig */,
+				F66B1D164182FF23DA27EAB9 /* Pods-MailChimp.release.xcconfig */,
+			);
+			name = Pods;
+			sourceTree = "<group>";
+		};
+		697C9A3AC296079B93017966 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				2791B7E342F2CAAC518E9BB3 /* Pods_MailChimp.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		C394ED741D22E582008FE68B = {
+			isa = PBXGroup;
+			children = (
+				C394ED7F1D22E582008FE68B /* MailChimp */,
+				C394ED7E1D22E582008FE68B /* Products */,
+				2370E2A1434274FD7C81FE94 /* Pods */,
+				697C9A3AC296079B93017966 /* Frameworks */,
+			);
+			sourceTree = "<group>";
+		};
+		C394ED7E1D22E582008FE68B /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				C394ED7D1D22E582008FE68B /* MailChimp.app */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		C394ED7F1D22E582008FE68B /* MailChimp */ = {
+			isa = PBXGroup;
+			children = (
+				C394ED801D22E582008FE68B /* AppDelegate.swift */,
+				C394ED821D22E582008FE68B /* ViewController.swift */,
+				C394ED921D22EB74008FE68B /* MailChimpModel.swift */,
+				C3FA64711D23A48D0067DD9F /* ContactList.swift */,
+				C394ED941D22EFDB008FE68B /* List.swift */,
+				C394ED841D22E582008FE68B /* Main.storyboard */,
+				C394ED961D22F7EA008FE68B /* ContactsViewController.swift */,
+				C394ED871D22E582008FE68B /* Assets.xcassets */,
+				C394ED891D22E582008FE68B /* LaunchScreen.storyboard */,
+				C394ED8C1D22E582008FE68B /* Info.plist */,
+			);
+			path = MailChimp;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		C394ED7C1D22E582008FE68B /* MailChimp */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = C394ED8F1D22E582008FE68B /* Build configuration list for PBXNativeTarget "MailChimp" */;
+			buildPhases = (
+				63C05A37B63CC4EFC921ECB0 /* [CP] Check Pods Manifest.lock */,
+				C394ED791D22E582008FE68B /* Sources */,
+				C394ED7A1D22E582008FE68B /* Frameworks */,
+				C394ED7B1D22E582008FE68B /* Resources */,
+				530A66BA131C34F8CDBABBC5 /* [CP] Embed Pods Frameworks */,
+				04FED4C8427926CE01A79DCB /* [CP] Copy Pods Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = MailChimp;
+			productName = MailChimp;
+			productReference = C394ED7D1D22E582008FE68B /* MailChimp.app */;
+			productType = "com.apple.product-type.application";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		C394ED751D22E582008FE68B /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastSwiftUpdateCheck = 0730;
+				LastUpgradeCheck = 0730;
+				ORGANIZATIONNAME = "Shakti Pratap Singh";
+				TargetAttributes = {
+					C394ED7C1D22E582008FE68B = {
+						CreatedOnToolsVersion = 7.3.1;
+					};
+				};
+			};
+			buildConfigurationList = C394ED781D22E582008FE68B /* Build configuration list for PBXProject "MailChimp" */;
+			compatibilityVersion = "Xcode 3.2";
+			developmentRegion = English;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = C394ED741D22E582008FE68B;
+			productRefGroup = C394ED7E1D22E582008FE68B /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				C394ED7C1D22E582008FE68B /* MailChimp */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		C394ED7B1D22E582008FE68B /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				C394ED8B1D22E582008FE68B /* LaunchScreen.storyboard in Resources */,
+				C394ED881D22E582008FE68B /* Assets.xcassets in Resources */,
+				C394ED861D22E582008FE68B /* Main.storyboard in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXShellScriptBuildPhase section */
+		04FED4C8427926CE01A79DCB /* [CP] Copy Pods Resources */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Copy Pods Resources";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-MailChimp/Pods-MailChimp-resources.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		530A66BA131C34F8CDBABBC5 /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-MailChimp/Pods-MailChimp-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		63C05A37B63CC4EFC921ECB0 /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_ROOT}/../Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [[ $? != 0 ]] ; then\n    cat << EOM\nerror: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\nEOM\n    exit 1\nfi\n";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		C394ED791D22E582008FE68B /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				C3FA64721D23A48D0067DD9F /* ContactList.swift in Sources */,
+				C394ED831D22E582008FE68B /* ViewController.swift in Sources */,
+				C394ED951D22EFDB008FE68B /* List.swift in Sources */,
+				C394ED811D22E582008FE68B /* AppDelegate.swift in Sources */,
+				C394ED931D22EB74008FE68B /* MailChimpModel.swift in Sources */,
+				C394ED971D22F7EA008FE68B /* ContactsViewController.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXVariantGroup section */
+		C394ED841D22E582008FE68B /* Main.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				C394ED851D22E582008FE68B /* Base */,
+			);
+			name = Main.storyboard;
+			sourceTree = "<group>";
+		};
+		C394ED891D22E582008FE68B /* LaunchScreen.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				C394ED8A1D22E582008FE68B /* Base */,
+			);
+			name = LaunchScreen.storyboard;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		C394ED8D1D22E582008FE68B /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 9.3;
+				MTL_ENABLE_DEBUG_INFO = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Debug;
+		};
+		C394ED8E1D22E582008FE68B /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 9.3;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				SDKROOT = iphoneos;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		C394ED901D22E582008FE68B /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = E62DE318CD20599B329FF04F /* Pods-MailChimp.debug.xcconfig */;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				INFOPLIST_FILE = MailChimp/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = in.codekamp.MailChimp;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+			};
+			name = Debug;
+		};
+		C394ED911D22E582008FE68B /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = F66B1D164182FF23DA27EAB9 /* Pods-MailChimp.release.xcconfig */;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				INFOPLIST_FILE = MailChimp/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = in.codekamp.MailChimp;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		C394ED781D22E582008FE68B /* Build configuration list for PBXProject "MailChimp" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				C394ED8D1D22E582008FE68B /* Debug */,
+				C394ED8E1D22E582008FE68B /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		C394ED8F1D22E582008FE68B /* Build configuration list for PBXNativeTarget "MailChimp" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				C394ED901D22E582008FE68B /* Debug */,
+				C394ED911D22E582008FE68B /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = C394ED751D22E582008FE68B /* Project object */;
+}
