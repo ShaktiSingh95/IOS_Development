@@ -11,10 +11,11 @@ import UIKit
 //shouldperformsague...
 //performsaguewithidentifier
 //this is a
-class ViewController: UIViewController,UITableViewDataSource,UITableViewDelegate {
-
+class ViewController: UIViewController,UITableViewDataSource,UITableViewDelegate,TextChangedListner{
+    
     @IBOutlet weak var viewTableVar: UITableView! //this will be nil only before the call of viewdidload(beacause of !)
-   // var noteToBeDisplayed:Note?
+    // var noteToBeDisplayed:Note?
+    
     override func viewDidLoad() {
         super.viewDidLoad()
         viewTableVar.dataSource=self
@@ -22,10 +23,19 @@ class ViewController: UIViewController,UITableViewDataSource,UITableViewDelegate
         // Do any additional setup after loading the view, typically from a nib.
     }
     func tableView(tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
-            return Note.allNotes().count
+        return Note.allNotes().count
     }
     func tableView(tableView: UITableView, canEditRowAtIndexPath indexPath: NSIndexPath) -> Bool {
         return true
+    }
+    func titleChanged(newTitle: String?,noteID: Int) {
+        print("new title:\(newTitle)")
+        Note.allNotes()[noteID].title=newTitle!
+        
+    }
+    func detailsChanged(newDetails: String?,noteID: Int) {
+        print("new details:\(newDetails)")
+        Note.allNotes()[noteID].details=newDetails!
     }
     
     func tableView(tableView: UITableView, editActionsForRowAtIndexPath indexPath: NSIndexPath) -> [UITableViewRowAction]? {
@@ -42,32 +52,20 @@ class ViewController: UIViewController,UITableViewDataSource,UITableViewDelegate
         cell.detailTextLabel?.text=noteAtPassedIndex.details
         return cell
     }
-
+    
     func tableView(tableView: UITableView, didSelectRowAtIndexPath indexPath: NSIndexPath) {
         
         
         tableView.deselectRowAtIndexPath(indexPath, animated: true)
         let row = indexPath.row
         let destinationVC = storyboard?.instantiateViewControllerWithIdentifier("notes_details") as! NoteViewController
-       // print(Note.allNotes()[row].title)
-        destinationVC.initialize(Note.allNotes()[row].title,details: Note.allNotes()[row].details)
-//        destinationVC.titlePassed =
-//        destinationVC.detailsPassed =
+        destinationVC.initialize(row,title: Note.allNotes()[row].title,details: Note.allNotes()[row].details)
+        destinationVC.reportChangesTo(self)
         showViewController(destinationVC, sender: nil)
-                
-
-}
-//    override func prepareForSegue(segue: UIStoryboardSegue, sender: AnyObject?) {
-//        
-//        if let destinationVC = segue.destinationViewController as? NoteViewController{
-//            
-//            destinationVC.detailsOfNote.text=noteToBeDisplayed!.details // this an error because although the object of destination of view cotroller is loaded but still its view is not still loaded
-//            destinationVC.titleOfNote.text=noteToBeDisplayed!.title
-//            destinationVC.noteClicked=noteToBeDisplayed
-//            
-//        }
-//        
+        
+        
+    }
     
-  }
+}
 
 

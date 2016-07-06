@@ -7,3 +7,19 @@
 //
 
 import Foundation
+struct notesData{
+    
+    var title:String
+    var details:String
+    init(){
+        
+    }
+    init(title:String,details:String)
+    {
+        
+        self.title = title
+        self.details = details
+        
+    }
+    
+}

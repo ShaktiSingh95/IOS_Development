@@ -7,16 +7,19 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		C31F0B2F1D212EF900067B3A /* dataSource.swift in Sources */ = {isa = PBXBuildFile; fileRef = C31F0B2E1D212EF900067B3A /* dataSource.swift */; };
 		C35F61DD1D16B67A00D25C8A /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = C35F61DC1D16B67A00D25C8A /* AppDelegate.swift */; };
 		C35F61DF1D16B67A00D25C8A /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = C35F61DE1D16B67A00D25C8A /* ViewController.swift */; };
 		C35F61E21D16B67A00D25C8A /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = C35F61E01D16B67A00D25C8A /* Main.storyboard */; };
 		C35F61E41D16B67A00D25C8A /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = C35F61E31D16B67A00D25C8A /* Assets.xcassets */; };
 		C35F61E71D16B67A00D25C8A /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = C35F61E51D16B67A00D25C8A /* LaunchScreen.storyboard */; };
 		C35F61EF1D16B7A900D25C8A /* Note.swift in Sources */ = {isa = PBXBuildFile; fileRef = C35F61EE1D16B7A900D25C8A /* Note.swift */; };
+		C37A82871D1DB49F00248198 /* TextChangeListnerProtocol.swift in Sources */ = {isa = PBXBuildFile; fileRef = C37A82861D1DB49F00248198 /* TextChangeListnerProtocol.swift */; };
 		C3EAEB371D1867F7007145CB /* NoteViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = C3EAEB361D1867F7007145CB /* NoteViewController.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		C31F0B2E1D212EF900067B3A /* dataSource.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = dataSource.swift; sourceTree = "<group>"; };
 		C35F61D91D16B67900D25C8A /* NotePad2.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = NotePad2.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		C35F61DC1D16B67A00D25C8A /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		C35F61DE1D16B67A00D25C8A /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
@@ -25,6 +28,7 @@
 		C35F61E61D16B67A00D25C8A /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		C35F61E81D16B67A00D25C8A /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		C35F61EE1D16B7A900D25C8A /* Note.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Note.swift; sourceTree = "<group>"; };
+		C37A82861D1DB49F00248198 /* TextChangeListnerProtocol.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = TextChangeListnerProtocol.swift; path = ../TextChangeListnerProtocol.swift; sourceTree = "<group>"; };
 		C3EAEB361D1867F7007145CB /* NoteViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = NoteViewController.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
@@ -58,11 +62,13 @@
 		C35F61DB1D16B67A00D25C8A /* NotePad2 */ = {
 			isa = PBXGroup;
 			children = (
+				C37A82861D1DB49F00248198 /* TextChangeListnerProtocol.swift */,
 				C35F61DC1D16B67A00D25C8A /* AppDelegate.swift */,
 				C35F61DE1D16B67A00D25C8A /* ViewController.swift */,
 				C35F61E01D16B67A00D25C8A /* Main.storyboard */,
 				C3EAEB361D1867F7007145CB /* NoteViewController.swift */,
 				C35F61EE1D16B7A900D25C8A /* Note.swift */,
+				C31F0B2E1D212EF900067B3A /* dataSource.swift */,
 				C35F61E31D16B67A00D25C8A /* Assets.xcassets */,
 				C35F61E51D16B67A00D25C8A /* LaunchScreen.storyboard */,
 				C35F61E81D16B67A00D25C8A /* Info.plist */,
@@ -142,6 +148,8 @@
 			buildActionMask = 2147483647;
 			files = (
 				C3EAEB371D1867F7007145CB /* NoteViewController.swift in Sources */,
+				C37A82871D1DB49F00248198 /* TextChangeListnerProtocol.swift in Sources */,
+				C31F0B2F1D212EF900067B3A /* dataSource.swift in Sources */,
 				C35F61DF1D16B67A00D25C8A /* ViewController.swift in Sources */,
 				C35F61DD1D16B67A00D25C8A /* AppDelegate.swift in Sources */,
 				C35F61EF1D16B7A900D25C8A /* Note.swift in Sources */,

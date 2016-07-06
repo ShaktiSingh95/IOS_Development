@@ -7,3 +7,7 @@
 //
 
 import Foundation
+protocol TextChangedListner {
+    func titleChanged(newTitle : String?,noteID: Int)
+    func detailsChanged(newDetails : String?,noteID: Int)
+}

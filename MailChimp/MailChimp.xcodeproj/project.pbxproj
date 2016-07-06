@@ -8,6 +8,9 @@
 
 /* Begin PBXBuildFile section */
 		0C69B0500D827217270026C3 /* Pods_MailChimp.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 2791B7E342F2CAAC518E9BB3 /* Pods_MailChimp.framework */; };
+		C362CED61D2641CC0096FFA0 /* CampaignViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = C362CED51D2641CC0096FFA0 /* CampaignViewController.swift */; };
+		C362CED81D26497F0096FFA0 /* CreateCampaignViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = C362CED71D26497F0096FFA0 /* CreateCampaignViewController.swift */; };
+		C362CEDA1D2650310096FFA0 /* ExistingCampaignsViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = C362CED91D2650310096FFA0 /* ExistingCampaignsViewController.swift */; };
 		C394ED811D22E582008FE68B /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = C394ED801D22E582008FE68B /* AppDelegate.swift */; };
 		C394ED831D22E582008FE68B /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = C394ED821D22E582008FE68B /* ViewController.swift */; };
 		C394ED861D22E582008FE68B /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = C394ED841D22E582008FE68B /* Main.storyboard */; };
@@ -16,11 +19,16 @@
 		C394ED931D22EB74008FE68B /* MailChimpModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = C394ED921D22EB74008FE68B /* MailChimpModel.swift */; };
 		C394ED951D22EFDB008FE68B /* List.swift in Sources */ = {isa = PBXBuildFile; fileRef = C394ED941D22EFDB008FE68B /* List.swift */; };
 		C394ED971D22F7EA008FE68B /* ContactsViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = C394ED961D22F7EA008FE68B /* ContactsViewController.swift */; };
+		C39B96B01D244D0A00D67EA7 /* ContactAdditionViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = C39B96AF1D244D0A00D67EA7 /* ContactAdditionViewController.swift */; };
+		C3C335171D25794B00025F91 /* DeletionViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = C3C335161D25794B00025F91 /* DeletionViewController.swift */; };
 		C3FA64721D23A48D0067DD9F /* ContactList.swift in Sources */ = {isa = PBXBuildFile; fileRef = C3FA64711D23A48D0067DD9F /* ContactList.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
 		2791B7E342F2CAAC518E9BB3 /* Pods_MailChimp.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_MailChimp.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		C362CED51D2641CC0096FFA0 /* CampaignViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CampaignViewController.swift; sourceTree = "<group>"; };
+		C362CED71D26497F0096FFA0 /* CreateCampaignViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CreateCampaignViewController.swift; sourceTree = "<group>"; };
+		C362CED91D2650310096FFA0 /* ExistingCampaignsViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ExistingCampaignsViewController.swift; sourceTree = "<group>"; };
 		C394ED7D1D22E582008FE68B /* MailChimp.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = MailChimp.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		C394ED801D22E582008FE68B /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		C394ED821D22E582008FE68B /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
@@ -31,6 +39,8 @@
 		C394ED921D22EB74008FE68B /* MailChimpModel.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MailChimpModel.swift; sourceTree = "<group>"; };
 		C394ED941D22EFDB008FE68B /* List.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = List.swift; sourceTree = "<group>"; };
 		C394ED961D22F7EA008FE68B /* ContactsViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ContactsViewController.swift; sourceTree = "<group>"; };
+		C39B96AF1D244D0A00D67EA7 /* ContactAdditionViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ContactAdditionViewController.swift; sourceTree = "<group>"; };
+		C3C335161D25794B00025F91 /* DeletionViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = DeletionViewController.swift; sourceTree = "<group>"; };
 		C3FA64711D23A48D0067DD9F /* ContactList.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ContactList.swift; sourceTree = "<group>"; };
 		E62DE318CD20599B329FF04F /* Pods-MailChimp.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-MailChimp.debug.xcconfig"; path = "Pods/Target Support Files/Pods-MailChimp/Pods-MailChimp.debug.xcconfig"; sourceTree = "<group>"; };
 		F66B1D164182FF23DA27EAB9 /* Pods-MailChimp.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-MailChimp.release.xcconfig"; path = "Pods/Target Support Files/Pods-MailChimp/Pods-MailChimp.release.xcconfig"; sourceTree = "<group>"; };
@@ -88,11 +98,16 @@
 			children = (
 				C394ED801D22E582008FE68B /* AppDelegate.swift */,
 				C394ED821D22E582008FE68B /* ViewController.swift */,
+				C362CED51D2641CC0096FFA0 /* CampaignViewController.swift */,
+				C362CED91D2650310096FFA0 /* ExistingCampaignsViewController.swift */,
 				C394ED921D22EB74008FE68B /* MailChimpModel.swift */,
 				C3FA64711D23A48D0067DD9F /* ContactList.swift */,
 				C394ED941D22EFDB008FE68B /* List.swift */,
 				C394ED841D22E582008FE68B /* Main.storyboard */,
+				C362CED71D26497F0096FFA0 /* CreateCampaignViewController.swift */,
+				C39B96AF1D244D0A00D67EA7 /* ContactAdditionViewController.swift */,
 				C394ED961D22F7EA008FE68B /* ContactsViewController.swift */,
+				C3C335161D25794B00025F91 /* DeletionViewController.swift */,
 				C394ED871D22E582008FE68B /* Assets.xcassets */,
 				C394ED891D22E582008FE68B /* LaunchScreen.storyboard */,
 				C394ED8C1D22E582008FE68B /* Info.plist */,
@@ -222,11 +237,16 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				C39B96B01D244D0A00D67EA7 /* ContactAdditionViewController.swift in Sources */,
 				C3FA64721D23A48D0067DD9F /* ContactList.swift in Sources */,
+				C362CEDA1D2650310096FFA0 /* ExistingCampaignsViewController.swift in Sources */,
+				C3C335171D25794B00025F91 /* DeletionViewController.swift in Sources */,
 				C394ED831D22E582008FE68B /* ViewController.swift in Sources */,
 				C394ED951D22EFDB008FE68B /* List.swift in Sources */,
 				C394ED811D22E582008FE68B /* AppDelegate.swift in Sources */,
+				C362CED61D2641CC0096FFA0 /* CampaignViewController.swift in Sources */,
 				C394ED931D22EB74008FE68B /* MailChimpModel.swift in Sources */,
+				C362CED81D26497F0096FFA0 /* CreateCampaignViewController.swift in Sources */,
 				C394ED971D22F7EA008FE68B /* ContactsViewController.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
