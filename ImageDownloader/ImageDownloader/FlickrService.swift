@@ -14,8 +14,6 @@ import SwiftyJSON
 class FlickrService{
     
     class func searchPhotoWithSearchedKey(searchedKey:String,page:Int,sortPara:String,handler: [Photo]->Void){
-        
-        
         var para:[String:AnyObject]=["method":Constants.Flickr.Url.searchMethod,"sort":sortPara,"text":searchedKey,"page":page]
         request(.GET,parameter: para,handler: {
             
@@ -28,7 +26,7 @@ class FlickrService{
                 
             }
             handler(photos)
-            
+            UIDeviceOrientationDidChangeNotification
         })
 
     }

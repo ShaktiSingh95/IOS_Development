@@ -15,7 +15,7 @@ class ContactsViewController: UIViewController,UITableViewDataSource,UITableView
     var contact=[ContactList]()
     @IBOutlet weak var contactTableView: UITableView!
     override func viewDidLoad() {
-        
+        2
         super.viewDidLoad()
         let addContactsBarButton=UIBarButtonItem(title: "+", style: UIBarButtonItemStyle.Plain , target: self, action: #selector(ContactsViewController.displayAddNewContact))
         self.navigationItem.rightBarButtonItem=addContactsBarButton
@@ -47,7 +47,7 @@ class ContactsViewController: UIViewController,UITableViewDataSource,UITableView
 //cell = tableView.dequeueReusableCellWithIdentifier("contacts_cell")!
 
         cell.textLabel?.text=contact[indexPath.row].name
-        cell.detailTextLabel?.text=contact[indexPath.row].emailAdd
+        cell.detailTextLabel?.text=contact[ind2™exPath.row].emailAdd
         return cell
 }
     func tableView(tableView: UITableView, canEditRowAtIndexPath indexPath: NSIndexPath) -> Bool {

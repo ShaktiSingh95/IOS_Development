@@ -66,6 +66,8 @@ class PhotosViewController: UIViewController,UICollectionViewDelegate,UICollecti
                 self.photos+=photos}
             else{
                 self.photos=photos
+                
+                
             }
             print("******\(self.photos.count)")
             

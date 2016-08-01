@@ -1,0 +1,87 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="10117" systemVersion="15F34" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" initialViewController="BYZ-38-t0r">
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="10085"/>
+        <capability name="Constraints to layout margins" minToolsVersion="6.0"/>
+    </dependencies>
+    <scenes>
+        <!--View Controller-->
+        <scene sceneID="tne-QT-ifu">
+            <objects>
+                <viewController id="BYZ-38-t0r" customClass="ViewController" customModule="NewsApp" customModuleProvider="target" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="y3c-jy-aDJ"/>
+                        <viewControllerLayoutGuide type="bottom" id="wfy-db-euE"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="8bC-Xf-vdC">
+                        <rect key="frame" x="0.0" y="0.0" width="600" height="600"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <tableView clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="prototypes" style="plain" separatorStyle="default" rowHeight="44" sectionHeaderHeight="28" sectionFooterHeight="28" translatesAutoresizingMaskIntoConstraints="NO" id="Ng0-ZG-KSh">
+                                <rect key="frame" x="20" y="28" width="560" height="552"/>
+                                <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                <prototypes>
+                                    <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" selectionStyle="blue" hidesAccessoryWhenEditing="NO" indentationLevel="1" indentationWidth="0.0" reuseIdentifier="story_cell" rowHeight="394" id="Alq-WW-OIh" customClass="StoryCell" customModule="NewsApp" customModuleProvider="target">
+                                        <rect key="frame" x="0.0" y="28" width="560" height="394"/>
+                                        <autoresizingMask key="autoresizingMask"/>
+                                        <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" tableViewCell="Alq-WW-OIh" id="3sS-Fe-zPE">
+                                            <rect key="frame" x="0.0" y="0.0" width="560" height="393"/>
+                                            <autoresizingMask key="autoresizingMask"/>
+                                            <subviews>
+                                                <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="ju2-HC-AOJ" customClass="RotatedView" customModule="FoldingCell">
+                                                    <rect key="frame" x="8" y="8" width="544" height="187"/>
+                                                    <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                                </view>
+                                                <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="Nqx-3b-X3f">
+                                                    <rect key="frame" x="8" y="195" width="544" height="190"/>
+                                                    <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                                </view>
+                                            </subviews>
+                                            <constraints>
+                                                <constraint firstItem="ju2-HC-AOJ" firstAttribute="trailing" secondItem="3sS-Fe-zPE" secondAttribute="trailingMargin" id="1fQ-A2-B31"/>
+                                                <constraint firstItem="ju2-HC-AOJ" firstAttribute="leading" secondItem="3sS-Fe-zPE" secondAttribute="leadingMargin" id="2bB-iZ-J8z"/>
+                                                <constraint firstAttribute="bottom" secondItem="ju2-HC-AOJ" secondAttribute="bottom" constant="198" id="9gk-Hd-eab"/>
+                                                <constraint firstItem="ju2-HC-AOJ" firstAttribute="leading" secondItem="Nqx-3b-X3f" secondAttribute="leading" id="AkZ-si-Z4E"/>
+                                                <constraint firstItem="Nqx-3b-X3f" firstAttribute="top" secondItem="ju2-HC-AOJ" secondAttribute="bottom" id="HBw-An-4pR"/>
+                                                <constraint firstItem="ju2-HC-AOJ" firstAttribute="trailing" secondItem="Nqx-3b-X3f" secondAttribute="trailing" id="K8x-Oo-jjM"/>
+                                                <constraint firstItem="Nqx-3b-X3f" firstAttribute="bottom" secondItem="3sS-Fe-zPE" secondAttribute="bottomMargin" id="Lmc-Xv-sl7"/>
+                                                <constraint firstItem="ju2-HC-AOJ" firstAttribute="top" secondItem="3sS-Fe-zPE" secondAttribute="topMargin" id="XyF-dP-fmP"/>
+                                            </constraints>
+                                        </tableViewCellContentView>
+                                        <connections>
+                                            <outlet property="containerView" destination="Nqx-3b-X3f" id="xhM-Ql-D7J"/>
+                                            <outlet property="containerViewTop" destination="XyF-dP-fmP" id="spA-hT-Cmj"/>
+                                            <outlet property="foregroundView" destination="ju2-HC-AOJ" id="gM2-Xn-rZy"/>
+                                            <outlet property="foregroundViewTop" destination="XyF-dP-fmP" id="z7K-0j-XC4"/>
+                                        </connections>
+                                    </tableViewCell>
+                                    <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" selectionStyle="blue" hidesAccessoryWhenEditing="NO" indentationLevel="1" indentationWidth="0.0" reuseIdentifier="buffer_cell" id="4AH-uT-IiN">
+                                        <rect key="frame" x="0.0" y="422" width="560" height="44"/>
+                                        <autoresizingMask key="autoresizingMask"/>
+                                        <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" tableViewCell="4AH-uT-IiN" id="eEH-6K-Oy8">
+                                            <rect key="frame" x="0.0" y="0.0" width="560" height="43"/>
+                                            <autoresizingMask key="autoresizingMask"/>
+                                        </tableViewCellContentView>
+                                    </tableViewCell>
+                                </prototypes>
+                            </tableView>
+                        </subviews>
+                        <color key="backgroundColor" red="1" green="0.47303515865653811" blue="0.43387044361586025" alpha="1" colorSpace="calibratedRGB"/>
+                        <constraints>
+                            <constraint firstItem="Ng0-ZG-KSh" firstAttribute="top" secondItem="y3c-jy-aDJ" secondAttribute="bottom" constant="8" symbolic="YES" id="0P4-RZ-VDS"/>
+                            <constraint firstItem="Ng0-ZG-KSh" firstAttribute="trailing" secondItem="8bC-Xf-vdC" secondAttribute="trailingMargin" id="Dbx-NI-bBu"/>
+                            <constraint firstAttribute="bottom" secondItem="Ng0-ZG-KSh" secondAttribute="bottom" constant="20" symbolic="YES" id="OJz-CU-oEB"/>
+                            <constraint firstItem="Ng0-ZG-KSh" firstAttribute="leading" secondItem="8bC-Xf-vdC" secondAttribute="leadingMargin" id="Oe9-03-3Qx"/>
+                        </constraints>
+                    </view>
+                    <connections>
+                        <outlet property="storyTableView" destination="Ng0-ZG-KSh" id="BGR-LB-3r6"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="325" y="400"/>
+        </scene>
+    </scenes>
+</document>

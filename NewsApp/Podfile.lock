@@ -1,0 +1,21 @@
+PODS:
+  - Alamofire (3.4.1)
+  - FoldingCell (1.0.0)
+  - Kingfisher (2.4.1)
+  - SwiftyJSON (2.3.2)
+
+DEPENDENCIES:
+  - Alamofire (~> 3.4)
+  - FoldingCell
+  - Kingfisher (~> 2.4)
+  - SwiftyJSON
+
+SPEC CHECKSUMS:
+  Alamofire: 01a82e2f6c0f860ade35534c8dd88be61bdef40c
+  FoldingCell: ca0b0f73a853143bf7d968c04a6604d25fbf1af7
+  Kingfisher: 41aed5b6c1ed8fa98cf6d75283ce89cf7890f517
+  SwiftyJSON: 04ccea08915aa0109039157c7974cf0298da292a
+
+PODFILE CHECKSUM: f02b404c0e75f5de57a5b9e4b0939d029529c058
+
+COCOAPODS: 1.0.1
